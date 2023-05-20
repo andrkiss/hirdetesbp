@@ -2,8 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
-        "postinstall": "npm run build"
+        "build": "vite build"
     },
     "devDependencies": {
         "@alpinejs/focus": "^3.10.5",
@@ -21,8 +20,5 @@
         "@fortawesome/fontawesome-free": "^6.4.0",
         "jquery": "^3.6.4",
         "lightbox2": "^2.11.4"
-    },
-    "engines": {
-        "node": "18.16.0"
-      }
+    }
 }
