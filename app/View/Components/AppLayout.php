@@ -5,6 +5,8 @@ namespace App\View\Components;
 use Illuminate\View\Component;
 use Illuminate\View\View;
 
+use App\Models\Category;
+
 class AppLayout extends Component
 {
     /**
@@ -12,6 +14,10 @@ class AppLayout extends Component
      */
     public function render(): View
     {
-        return view('layouts.app');
+        $KategN = Category::get();
+
+        return view('layouts.app')->with([
+            'KategN' => $KategN,
+        ]);
     }
 }

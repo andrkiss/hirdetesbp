@@ -165,17 +165,6 @@
     {{-- kek resz --}}
     <div class="h-4 bg-blue-300"></div>
 
-    {{-- alul linkek --}}
-    <div class="flex justify-center space-x-11 p-1">
-        @foreach($KategN as $kateg)
-        <x-nav-link href="/ad/kategoria/{{ $kateg->id }}" class="text-lg">
-            <div class="flex space-x-1 items-center">
-                    <i class="text-xl mb-0.5 text-center fa fa-{{ $kateg->ikon }}"></i>
-                    <b class="text-sm">{{ $kateg->nev }}</b>
-            </div>
-        </x-nav-link>
-        @endforeach
-    </div>
 
     <!-- Responsive Navigation Menu -->
     {{-- kis kepernyo --}}
